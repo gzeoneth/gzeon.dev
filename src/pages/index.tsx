@@ -70,10 +70,10 @@ const badgeStyle = {
 const links = [
   {
     text: "GitHub",
-    url: "#",
+    url: "https://github.com/gzeoneth",
     badge: true,
     description:
-      "Nothing to see here yet.",
+      "My Github profile. You can find all my projects here.",
     color: "#663399",
   },
 ]
