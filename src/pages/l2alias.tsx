@@ -42,7 +42,7 @@ const L2AliasTool = () => {
             <h1 style={headingStyles}>
                 Welcome
                 <br />
-                <a href="./"><span style={headingAccentStyles}>to gzeon.dev</span></a>
+                <a href="/"><span style={headingAccentStyles}>to gzeon.dev</span></a>
             </h1>
             <div>
                 <form onSubmit={handleSubmit}>
