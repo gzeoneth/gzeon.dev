@@ -71,9 +71,14 @@ const links = [
   {
     text: "GitHub",
     url: "https://github.com/gzeoneth",
-    badge: true,
     description:
       "My Github profile. You can find all my projects here.",
+    color: "#663399",
+  },
+  {
+    text: "L2 Alias Helper",
+    url: "./l2alias",
+    badge: true,
     color: "#663399",
   },
 ]
