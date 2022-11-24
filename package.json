@@ -19,6 +19,8 @@
     "@arbitrum/sdk": "^3.0.0-beta.8",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "connectkit": "^1.0.1",
+    "ethers": "^5.7.2",
     "gatsby": "^4.9.0",
     "gatsby-plugin-image": "^2.9.0",
     "gatsby-plugin-manifest": "^4.9.0",
@@ -30,7 +32,8 @@
     "gatsby-transformer-sharp": "^4.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "wagmi": "^0.8.6"
   },
   "devDependencies": {
     "@types/node": "^17.0.14",
