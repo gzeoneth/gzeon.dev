@@ -49,7 +49,7 @@ const L2AliasTool = () => {
                     <div className="form-container">
                         <input
                             autoFocus
-                            placeholder="Tx hash"
+                            placeholder="Contract Address"
                             value={input}
                             onChange={handleChange}
                             className="input-style"
