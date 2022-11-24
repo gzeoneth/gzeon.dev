@@ -78,6 +78,11 @@ const links = [
   {
     text: "L2 Alias Helper",
     url: "./l2alias",
+    color: "#663399",
+  },
+  {
+    text: "Get Storage Tool",
+    url: "./getStorage",
     badge: true,
     color: "#663399",
   },
