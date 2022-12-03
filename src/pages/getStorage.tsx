@@ -75,6 +75,7 @@ const resultStyles = {
 
 const PROXY_ADMIN_SLOT = '0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103'
 const PROXY_IMPL_SLOT = '0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc'
+const SECONDARY_IMPL_SLOT = '0x2b1dbce74324248c222f0ec2d5ed7bd323cfc425b336f0253c5ccfda7265546d'
 
 // markup
 const GetStorageTool = () => {
@@ -100,7 +101,7 @@ const GetStorageTool = () => {
             const isContract = (await provider.getCode(addr)).length > 2; // 0x
             if (isContract) {
                 const res = await provider.getStorageAt(addr, slot)
-                if (slot === PROXY_ADMIN_SLOT || slot === PROXY_IMPL_SLOT) {
+                if (slot === PROXY_ADMIN_SLOT || slot === PROXY_IMPL_SLOT || slot === SECONDARY_IMPL_SLOT) {
                     setResult(`0x${res.slice(26)}`)
                 } else {
                     setResult(res)
@@ -167,6 +168,15 @@ const GetStorageTool = () => {
                                         checked={slot === PROXY_IMPL_SLOT}
                                         onChange={handleSlotChange}
                                     /> proxy-impl
+                                </label>
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="slot_type"
+                                        value={SECONDARY_IMPL_SLOT}
+                                        checked={slot === SECONDARY_IMPL_SLOT}
+                                        onChange={handleSlotChange}
+                                    /> 2nd-proxy-impl
                                 </label>
                             </div>
                         </form>
